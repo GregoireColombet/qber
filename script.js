@@ -28,7 +28,8 @@ function switchPage(pageName) {
   pages.forEach((page) => page.classList.remove("active"));
 
   // Show target page
-  const targetPage = document.querySelector(`section[data-page="${pageName}"]`);
+  const activeLink = document.querySelector(`a[data-page="${pageName}"]`);
+  //const targetPage = document.querySelector(`section[data-page="${pageName}"]`);
   if (targetPage) {
     targetPage.classList.add("active");
   }
