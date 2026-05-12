@@ -781,13 +781,13 @@ a:hover {
 .app-detail {
     padding: var(--spacing-2xl) var(--spacing-md);
     min-height: 60vh;
-    /*display: none;*/
+    display: none;
 }
-
+/*
 .app-detail {
     display: block;
 }
-
+*/
 .detail-page {
     display: none;
     animation: fadeIn 0.4s ease;
