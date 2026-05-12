@@ -17,25 +17,25 @@
     --color-text-light: #f5f7fa;
     --color-border: #e0e6ed;
     --color-success: #4caf50;
-    
+
     --font-display: "Georgia", serif;
     --font-body: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    
+
     --spacing-xs: 0.5rem;
     --spacing-sm: 1rem;
     --spacing-md: 1.5rem;
     --spacing-lg: 2rem;
     --spacing-xl: 3rem;
     --spacing-2xl: 4rem;
-    
+
     --radius-sm: 4px;
     --radius-md: 8px;
     --radius-lg: 12px;
-    
+
     --transition-fast: 0.2s ease;
     --transition-smooth: 0.4s ease;
     --transition-slow: 0.6s ease;
-    
+
     --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
     --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.15);
     --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.2);
@@ -135,7 +135,11 @@ a:hover {
 }
 
 .btn-primary {
-    background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
+    background: linear-gradient(
+        135deg,
+        var(--color-primary),
+        var(--color-primary-dark)
+    );
     color: white;
     box-shadow: var(--shadow-md);
 }
@@ -427,7 +431,11 @@ a:hover {
 .hero-title {
     font-size: 3.5rem;
     margin-bottom: var(--spacing-md);
-    background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+    background: linear-gradient(
+        135deg,
+        var(--color-primary),
+        var(--color-secondary)
+    );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -638,7 +646,11 @@ a:hover {
 
 .oem-section {
     padding: var(--spacing-2xl) var(--spacing-md);
-    background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
+    background: linear-gradient(
+        135deg,
+        var(--color-primary),
+        var(--color-primary-dark)
+    );
     color: white;
 }
 
@@ -769,7 +781,7 @@ a:hover {
 .app-detail {
     padding: var(--spacing-2xl) var(--spacing-md);
     min-height: 60vh;
-    display: none;
+    /*display: none;*/
 }
 
 .app-detail {
@@ -1003,7 +1015,11 @@ a:hover {
 
 .contact-section {
     padding: var(--spacing-2xl) var(--spacing-md);
-    background: linear-gradient(135deg, var(--color-dark), var(--color-dark-accent));
+    background: linear-gradient(
+        135deg,
+        var(--color-dark),
+        var(--color-dark-accent)
+    );
     color: var(--color-text-light);
 }
 
