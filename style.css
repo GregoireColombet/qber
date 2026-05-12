@@ -769,6 +769,11 @@ a:hover {
 .app-detail {
     padding: var(--spacing-2xl) var(--spacing-md);
     min-height: 60vh;
+    display: none;
+}
+
+.app-detail {
+    display: block;
 }
 
 .detail-page {
@@ -832,10 +837,6 @@ a:hover {
     left: 0;
     color: var(--color-success);
     font-weight: bold;
-}
-
-.hidden {
-    display: none;
 }
 
 /* ============================================================================

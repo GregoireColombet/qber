@@ -35,7 +35,7 @@ function switchPage(pageName) {
 
     // Update active nav link
     navLinks.forEach(link => link.classList.remove('active'));
-    const activeLink = document.querySelector(`[data-page="${pageName}"]`);
+    const activeLink = document.querySelector(`a[data-page="${pageName}"]`);
     if (activeLink) {
         activeLink.classList.add('active');
     }
