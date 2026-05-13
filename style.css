@@ -723,11 +723,12 @@ a:hover {
 }
 
 .detail-page {
-    display: none;
+    display: block;
 }
 
-.detail-page.active {
-    display: block;
+/* Used by applications.html to hide non-selected sections */
+.detail-page.hidden {
+    display: none;
 }
 
 /* ============================================================================
