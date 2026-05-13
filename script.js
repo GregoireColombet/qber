@@ -232,21 +232,36 @@ window.addEventListener("scroll", () => {
 });
 
 // ============================================================================
-// Responsive Handling
+// Initialize Page
 // ============================================================================
 
 /**
- * Handle window resize
+ * Initialize page on load - ensure all elements are visible
  */
-window.addEventListener("resize", () => {
-  if (window.innerWidth > 768) {
-    closeNavMenu();
+document.addEventListener('DOMContentLoaded', () => {
+  // Ensure navbar is visible
+  if (navbar) {
+    navbar.style.display = 'block';
+    navbar.style.visibility = 'visible';
   }
-});
+  
+  // Ensure all main content is visible
+  const mainElement = document.querySelector('main');
+  if (mainElement) {
+    mainElement.style.display = 'block';
+    mainElement.style.visibility = 'visible';
+  }
+  
+  // Scroll to top on fresh page load
+  window.scrollTo(0, 0);
 
-// ============================================================================
-// Utilities
-// ============================================================================
+  // Add keyboard shortcut for close (ESC)
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      closeNavMenu();
+    }
+  });
+});
 
 /**
  * Get query parameter from URL

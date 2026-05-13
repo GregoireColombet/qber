@@ -480,18 +480,22 @@ a:hover {
 .strengths {
     padding: var(--spacing-2xl) var(--spacing-md);
     background: white;
+    display: block;
+    visibility: visible;
 }
 
 .strengths h2 {
     text-align: center;
     color: var(--color-primary);
     margin-bottom: var(--spacing-2xl);
+    display: block;
 }
 
 .strengths-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: var(--spacing-lg);
+    visibility: visible;
 }
 
 .strength-card {
