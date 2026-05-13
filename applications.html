@@ -1,360 +1,242 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="QBER Applications - Quantum Frequency Resonance Technology Solutions">
-    <meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate">
-    <meta http-equiv="pragma" content="no-cache">
-    <meta http-equiv="expires" content="0">
-    <title>QBER - Applications</title>
-    <link rel="stylesheet" href="style.css?v=1.1">
-</head>
-<body>
-    <!-- Navigation -->
-    <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <a href="index.html">QBER</a>
-                <span class="logo-subtitle">Frequency Resonance</span>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="QBER Applications - Quantum Frequency Resonance Technology Solutions"
+        />
+        <meta
+            http-equiv="cache-control"
+            content="no-cache, no-store, must-revalidate"
+        />
+        <meta http-equiv="pragma" content="no-cache" />
+        <meta http-equiv="expires" content="0" />
+        <title>QBER - Applications</title>
+        <link rel="stylesheet" href="style.css?v=1.1" />
+    </head>
+    <body>
+        <!-- Navigation -->
+        <nav class="navbar" id="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <a href="index.html">QBER</a>
+                    <span class="logo-subtitle">Frequency Resonance</span>
+                </div>
+                <button
+                    class="nav-toggle"
+                    id="navToggle"
+                    aria-label="Toggle navigation"
+                >
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-dropdown">
+                        <a href="applications.html" class="nav-link active"
+                            >Applications</a
+                        >
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="green-energy.html">Green Energy</a>
+                            </li>
+                            <li>
+                                <a href="sports.html">Sports & Performance</a>
+                            </li>
+                            <li>
+                                <a href="food-agriculture.html"
+                                    >Food & Agriculture</a
+                                >
+                            </li>
+                            <li><a href="healthcare.html">Healthcare</a></li>
+                            <li>
+                                <a href="sleep-quality.html">Sleep Quality</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="literature.html" class="nav-link"
+                            >Literature</a
+                        >
+                    </li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li>
+                        <a href="contact.html" class="nav-link contact-btn"
+                            >Contact Us</a
+                        >
+                    </li>
+                </ul>
             </div>
-            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <ul class="nav-menu" id="navMenu">
-                <li><a href="index.html" class="nav-link">Home</a></li>
-                <li class="nav-dropdown">
-                    <a href="applications.html" class="nav-link active">Applications</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="applications.html?app=green-energy">Green Energy</a></li>
-                        <li><a href="applications.html?app=sports">Sports & Performance</a></li>
-                        <li><a href="applications.html?app=food">Food & Agriculture</a></li>
-                        <li><a href="applications.html?app=healthcare">Healthcare</a></li>
-                        <li><a href="applications.html?app=sleep">Sleep Quality</a></li>
-                    </ul>
-                </li>
-                <li><a href="literature.html" class="nav-link">Literature</a></li>
-                <li><a href="about.html" class="nav-link">About</a></li>
-                <li><a href="contact.html" class="nav-link contact-btn">Contact Us</a></li>
-            </ul>
-        </div>
-    </nav>
+        </nav>
 
-    <!-- Main Content -->
-    <main>
-        <!-- Applications Section -->
-        <section class="applications">
+        <!-- Main Content -->
+        <main>
+            <!-- Applications Section -->
+            <section class="applications">
+                <div class="container">
+                    <h2>QBER Applications</h2>
+                    <p
+                        style="
+                            text-align: center;
+                            margin-bottom: 3rem;
+                            color: #546e7a;
+                        "
+                    >
+                        Discover how quantum frequency resonance transforms
+                        industries and improves lives
+                    </p>
+
+                    <div class="apps-showcase">
+                        <article
+                            class="app-tile"
+                            onclick="scrollToDetail('green-energy')"
+                        >
+                            <div class="app-icon">⚡</div>
+                            <h3>Green Energy</h3>
+                            <p>
+                                Enhance solar panel efficiency and energy
+                                storage systems with quantum frequency
+                                optimization.
+                            </p>
+                        </article>
+                        <article
+                            class="app-tile"
+                            onclick="scrollToDetail('sports')"
+                        >
+                            <div class="app-icon">🏃</div>
+                            <h3>Sports & Performance</h3>
+                            <p>
+                                Accelerate recovery, reduce fatigue, and
+                                optimize athletic performance with bioresonance
+                                technology.
+                            </p>
+                        </article>
+                        <article
+                            class="app-tile"
+                            onclick="scrollToDetail('food')"
+                        >
+                            <div class="app-icon">🌾</div>
+                            <h3>Food & Agriculture</h3>
+                            <p>
+                                Improve crop yields, extend shelf life, and
+                                enhance nutritional value through frequency
+                                application.
+                            </p>
+                        </article>
+                        <article
+                            class="app-tile"
+                            onclick="scrollToDetail('healthcare')"
+                        >
+                            <div class="app-icon">🏥</div>
+                            <h3>Healthcare</h3>
+                            <p>
+                                Non-invasive solutions for pain management,
+                                wound healing, and patient rehabilitation.
+                            </p>
+                        </article>
+                        <article
+                            class="app-tile"
+                            onclick="scrollToDetail('sleep')"
+                        >
+                            <div class="app-icon">😴</div>
+                            <h3>Sleep Quality</h3>
+                            <p>
+                                Promote restorative sleep and circadian rhythm
+                                optimization with targeted bioresonance.
+                            </p>
+                        </article>
+                        <article
+                            class="app-tile"
+                            onclick="scrollToDetail('industrial')"
+                        >
+                            <div class="app-icon">🔧</div>
+                            <h3>Industrial Solutions</h3>
+                            <p>
+                                EMI shielding, material enhancement, and
+                                manufacturing process optimization.
+                            </p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
             <div class="container">
-                <h2>QBER Applications</h2>
-                <p style="text-align: center; margin-bottom: 3rem; color: #546e7a;">
-                    Discover how quantum frequency resonance transforms industries and improves lives
-                </p>
-
-                <div class="apps-showcase">
-                    <article class="app-tile" onclick="scrollToDetail('green-energy')">
-                        <div class="app-icon">⚡</div>
-                        <h3>Green Energy</h3>
-                        <p>Enhance solar panel efficiency and energy storage systems with quantum frequency optimization.</p>
-                    </article>
-                    <article class="app-tile" onclick="scrollToDetail('sports')">
-                        <div class="app-icon">🏃</div>
-                        <h3>Sports & Performance</h3>
-                        <p>Accelerate recovery, reduce fatigue, and optimize athletic performance with bioresonance technology.</p>
-                    </article>
-                    <article class="app-tile" onclick="scrollToDetail('food')">
-                        <div class="app-icon">🌾</div>
-                        <h3>Food & Agriculture</h3>
-                        <p>Improve crop yields, extend shelf life, and enhance nutritional value through frequency application.</p>
-                    </article>
-                    <article class="app-tile" onclick="scrollToDetail('healthcare')">
-                        <div class="app-icon">🏥</div>
-                        <h3>Healthcare</h3>
-                        <p>Non-invasive solutions for pain management, wound healing, and patient rehabilitation.</p>
-                    </article>
-                    <article class="app-tile" onclick="scrollToDetail('sleep')">
-                        <div class="app-icon">😴</div>
-                        <h3>Sleep Quality</h3>
-                        <p>Promote restorative sleep and circadian rhythm optimization with targeted bioresonance.</p>
-                    </article>
-                    <article class="app-tile" onclick="scrollToDetail('industrial')">
-                        <div class="app-icon">🔧</div>
-                        <h3>Industrial Solutions</h3>
-                        <p>EMI shielding, material enhancement, and manufacturing process optimization.</p>
-                    </article>
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <h4>QBER</h4>
+                        <p>Quantum Frequency Resonance Technology</p>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li>
+                                <a href="applications.html">Applications</a>
+                            </li>
+                            <li><a href="literature.html">Literature</a></li>
+                            <li><a href="about.html">About</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Compliance</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Connect</h4>
+                        <ul>
+                            <li><a href="#">Facebook</a></li>
+                            <li><a href="#">LinkedIn</a></li>
+                            <li><a href="#">YouTube</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>
+                        &copy; 2024 QBER. All rights reserved. | Light-Quantum
+                        Technology Patents Registered.
+                    </p>
                 </div>
             </div>
-        </section>
+        </footer>
 
-        <!-- Application Details -->
-        <section class="app-detail">
-            <div class="container">
-                <!-- Green Energy Detail -->
-                <div class="detail-page" id="detail-green-energy">
-                    <div class="detail-header">
-                        <h1>Green Energy Solutions</h1>
-                        <p style="color: #00d4ff; font-size: 1.2rem;">Quantum-Optimized Energy Systems</p>
-                    </div>
-                    <div class="detail-content">
-                        <div class="detail-text">
-                            <h2>Enhanced Energy Efficiency</h2>
-                            <p>QBER's quantum frequency resonance technology increases solar panel efficiency by optimizing electron flow and reducing energy loss through heat dissipation.</p>
-                            <h3>Key Benefits:</h3>
-                            <ul class="tech-list">
-                                <li><strong>Efficiency Gain:</strong> 15-22% improvement in solar conversion rates</li>
-                                <li><strong>Battery Performance:</strong> Extended lifespan and faster charging cycles</li>
-                                <li><strong>Grid Optimization:</strong> Reduced transmission losses</li>
-                                <li><strong>Scalability:</strong> Works for residential to industrial applications</li>
-                                <li><strong>Cost-Effective:</strong> Minimal implementation cost with maximum ROI</li>
-                            </ul>
-                            <p style="margin-top: 2rem;"><a href="contact.html" class="btn btn-primary">Discuss Partnership</a></p>
-                        </div>
-                        <div class="detail-visual">
-                            <h3>Technology Overview</h3>
-                            <svg viewBox="0 0 300 200" style="width: 100%; height: auto;">
-                                <rect x="20" y="20" width="260" height="160" fill="#f5f7fa" stroke="#0099ff" stroke-width="2" rx="8"/>
-                                <circle cx="80" cy="80" r="30" fill="#00d4ff" opacity="0.8"/>
-                                <text x="80" y="85" text-anchor="middle" font-size="12" fill="white" font-weight="bold">Solar</text>
-                                <circle cx="150" cy="80" r="30" fill="#0099ff" opacity="0.8"/>
-                                <text x="150" y="85" text-anchor="middle" font-size="12" fill="white" font-weight="bold">QBER</text>
-                                <circle cx="220" cy="80" r="30" fill="#00d4ff" opacity="0.8"/>
-                                <text x="220" y="85" text-anchor="middle" font-size="12" fill="white" font-weight="bold">Battery</text>
-                                <path d="M 50 80 L 110 80" stroke="#0099ff" stroke-width="2" marker-end="url(#arrowhead)"/>
-                                <path d="M 180 80 L 240 80" stroke="#0099ff" stroke-width="2" marker-end="url(#arrowhead)"/>
-                                <defs>
-                                    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
-                                        <polygon points="0 0, 10 3, 0 6" fill="#0099ff" />
-                                    </marker>
-                                </defs>
-                                <text x="150" y="140" text-anchor="middle" font-size="14" font-weight="bold" fill="#0099ff">+15-22% Efficiency</text>
-                                <text x="150" y="160" text-anchor="middle" font-size="12" fill="#546e7a">Quantum Frequency Optimization</text>
-                            </svg>
-                        </div>
-                    </div>
-                </div>
+        <script>
+            // Show detail page based on URL parameter or scroll to it
+            function scrollToDetail(appName) {
+                // Hide all detail pages
+                document.querySelectorAll(".detail-page").forEach((page) => {
+                    page.classList.remove("active");
+                });
 
-                <!-- Sports & Performance Detail -->
-                <div class="detail-page" id="detail-sports">
-                    <div class="detail-header">
-                        <h1>Sports & Performance Enhancement</h1>
-                        <p style="color: #00d4ff; font-size: 1.2rem;">Athletic Excellence Through Bioresonance</p>
-                    </div>
-                    <div class="detail-content">
-                        <div class="detail-text">
-                            <h2>Peak Performance Technology</h2>
-                            <p>Athletes using QBER-embedded performance wear report significantly faster recovery times, reduced muscle soreness, and improved endurance. The technology harmonizes with the body's bioelectric field to accelerate cellular repair.</p>
-                            <h3>Key Benefits:</h3>
-                            <ul class="tech-list">
-                                <li><strong>Recovery Time:</strong> 35-50% faster muscle recovery</li>
-                                <li><strong>Endurance:</strong> Enhanced oxygen utilization and stamina</li>
-                                <li><strong>Injury Prevention:</strong> Reduced inflammation and muscle tension</li>
-                                <li><strong>Sleep Quality:</strong> Deeper, more restorative rest</li>
-                                <li><strong>Professional Adoption:</strong> Used by elite athletes worldwide</li>
-                            </ul>
-                            <p style="margin-top: 2rem;"><a href="contact.html" class="btn btn-primary">Athlete Partnership Program</a></p>
-                        </div>
-                        <div class="detail-visual">
-                            <h3>Performance Metrics</h3>
-                            <svg viewBox="0 0 300 200" style="width: 100%; height: auto;">
-                                <rect x="20" y="20" width="260" height="160" fill="#f5f7fa" stroke="#0099ff" stroke-width="2" rx="8"/>
-                                <text x="30" y="50" font-size="12" font-weight="bold" fill="#0099ff">Recovery (days)</text>
-                                <rect x="30" y="60" width="80" height="30" fill="#ff1493" opacity="0.6"/>
-                                <text x="70" y="80" text-anchor="middle" font-size="11" fill="white" font-weight="bold">Standard: 7</text>
-                                <rect x="30" y="95" width="50" height="30" fill="#00d4ff"/>
-                                <text x="55" y="115" text-anchor="middle" font-size="11" fill="white" font-weight="bold">QBER: 4</text>
-                                <text x="150" y="50" font-size="12" font-weight="bold" fill="#0099ff">Endurance (hours)</text>
-                                <rect x="120" y="60" width="150" height="30" fill="#ff1493" opacity="0.6"/>
-                                <text x="195" y="80" text-anchor="middle" font-size="11" fill="white" font-weight="bold">Standard: 3.5h</text>
-                                <rect x="120" y="95" width="200" height="30" fill="#00d4ff"/>
-                                <text x="220" y="115" text-anchor="middle" font-size="11" fill="white" font-weight="bold">QBER: 5.2h</text>
-                            </svg>
-                        </div>
-                    </div>
-                </div>
+                // Show selected detail page
+                const targetDetail = document.getElementById(
+                    `detail-${appName}`,
+                );
+                if (targetDetail) {
+                    targetDetail.classList.add("active");
+                    targetDetail.scrollIntoView({ behavior: "smooth" });
+                }
+            }
 
-                <!-- Food & Agriculture Detail -->
-                <div class="detail-page" id="detail-food">
-                    <div class="detail-header">
-                        <h1>Food & Agriculture Solutions</h1>
-                        <p style="color: #00d4ff; font-size: 1.2rem;">Sustainable Farming Through Quantum Technology</p>
-                    </div>
-                    <div class="detail-content">
-                        <div class="detail-text">
-                            <h2>Agricultural Optimization</h2>
-                            <p>QBER frequencies enhance plant cellular function, improving nutrient absorption, growth rates, and crop resilience. The technology can be applied through irrigation systems, soil treatment, or direct plant exposure.</p>
-                            <h3>Key Benefits:</h3>
-                            <ul class="tech-list">
-                                <li><strong>Yield Increase:</strong> 20-35% higher crop yields</li>
-                                <li><strong>Pest Resistance:</strong> Improved plant immunity and disease resistance</li>
-                                <li><strong>Nutritional Value:</strong> Enhanced micronutrient content in crops</li>
-                                <li><strong>Shelf Life:</strong> Extended freshness and reduced spoilage</li>
-                                <li><strong>Sustainable:</strong> Chemical-free enhancement method</li>
-                            </ul>
-                            <p style="margin-top: 2rem;"><a href="contact.html" class="btn btn-primary">Agricultural Partnership</a></p>
-                        </div>
-                        <div class="detail-visual">
-                            <h3>Growth Comparison</h3>
-                            <svg viewBox="0 0 300 200" style="width: 100%; height: auto;">
-                                <rect x="20" y="20" width="260" height="160" fill="#f5f7fa" stroke="#0099ff" stroke-width="2" rx="8"/>
-                                <text x="150" y="45" text-anchor="middle" font-size="12" font-weight="bold" fill="#0099ff">Crop Yield Growth</text>
-                                <rect x="40" y="70" width="70" height="80" fill="#ff1493" opacity="0.6"/>
-                                <text x="75" y="115" text-anchor="middle" font-size="11" fill="white">Standard</text>
-                                <text x="75" y="165" text-anchor="middle" font-size="12" font-weight="bold" fill="#546e7a">100%</text>
-                                <rect x="140" y="50" width="90" height="100" fill="#00d4ff"/>
-                                <text x="185" y="115" text-anchor="middle" font-size="11" fill="white" font-weight="bold">With QBER</text>
-                                <text x="185" y="165" text-anchor="middle" font-size="12" font-weight="bold" fill="#546e7a">127%</text>
-                                <rect x="240" y="40" width="20" height="110" fill="#4caf50"/>
-                                <text x="250" y="165" text-anchor="middle" font-size="11" fill="#546e7a">+27%</text>
-                            </svg>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Healthcare Detail -->
-                <div class="detail-page" id="detail-healthcare">
-                    <div class="detail-header">
-                        <h1>Healthcare & Wellness</h1>
-                        <p style="color: #00d4ff; font-size: 1.2rem;">Non-Invasive Health Solutions</p>
-                    </div>
-                    <div class="detail-content">
-                        <div class="detail-text">
-                            <h2>Medical-Grade Technology</h2>
-                            <p>QBER's healthcare applications include pain management, accelerated wound healing, and therapeutic interventions. The technology has been tested in clinical settings and approved for therapeutic use in multiple countries.</p>
-                            <h3>Key Benefits:</h3>
-                            <ul class="tech-list">
-                                <li><strong>Pain Relief:</strong> 65-80% improvement in chronic pain conditions</li>
-                                <li><strong>Wound Healing:</strong> 40% faster cellular regeneration</li>
-                                <li><strong>Inflammation Reduction:</strong> Non-pharmaceutical anti-inflammatory effect</li>
-                                <li><strong>Patient Compliance:</strong> Non-invasive, no side effects</li>
-                                <li><strong>Clinical Validation:</strong> Third-party tested and certified</li>
-                            </ul>
-                            <p style="margin-top: 2rem;"><a href="contact.html" class="btn btn-primary">Healthcare Inquiries</a></p>
-                        </div>
-                        <div class="detail-visual">
-                            <h3>Clinical Results</h3>
-                            <svg viewBox="0 0 300 200" style="width: 100%; height: auto;">
-                                <rect x="20" y="20" width="260" height="160" fill="#f5f7fa" stroke="#0099ff" stroke-width="2" rx="8"/>
-                                <text x="30" y="50" font-size="11" font-weight="bold" fill="#0099ff">Pain Reduction</text>
-                                <rect x="30" y="55" width="200" height="25" fill="#00d4ff"/>
-                                <text x="135" y="72" text-anchor="middle" font-size="11" fill="white" font-weight="bold">72% Improvement</text>
-                                <text x="30" y="95" font-size="11" font-weight="bold" fill="#0099ff">Healing Speed</text>
-                                <rect x="30" y="100" width="160" height="25" fill="#4caf50"/>
-                                <text x="110" y="117" text-anchor="middle" font-size="11" fill="white" font-weight="bold">+40% Faster</text>
-                                <text x="30" y="140" font-size="11" font-weight="bold" fill="#0099ff">Patient Satisfaction</text>
-                                <rect x="30" y="145" width="220" height="25" fill="#ff1493" opacity="0.7"/>
-                                <text x="140" y="162" text-anchor="middle" font-size="11" fill="white" font-weight="bold">92% Satisfaction Rate</text>
-                            </svg>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Sleep Quality Detail -->
-                <div class="detail-page" id="detail-sleep">
-                    <div class="detail-header">
-                        <h1>Sleep Quality Optimization</h1>
-                        <p style="color: #00d4ff; font-size: 1.2rem;">Restorative Sleep Technology</p>
-                    </div>
-                    <div class="detail-content">
-                        <div class="detail-text">
-                            <h2>Circadian Rhythm Enhancement</h2>
-                            <p>QBER's sleep optimization technology promotes deeper, more restorative sleep by aligning with the body's natural circadian rhythms. Embedded in bedding, sleepwear, or room systems, it provides passive 24/7 bioresonance support.</p>
-                            <h3>Key Benefits:</h3>
-                            <ul class="tech-list">
-                                <li><strong>Sleep Depth:</strong> 50% increase in deep sleep duration</li>
-                                <li><strong>Sleep Quality:</strong> Reduced sleep interruptions</li>
-                                <li><strong>Sleep Onset:</strong> 30-40% faster time to sleep</li>
-                                <li><strong>Morning Alertness:</strong> Enhanced daytime energy levels</li>
-                                <li><strong>Natural Solution:</strong> No medications or stimulants required</li>
-                            </ul>
-                            <p style="margin-top: 2rem;"><a href="contact.html" class="btn btn-primary">Sleep Solutions</a></p>
-                        </div>
-                        <div class="detail-visual">
-                            <h3>Sleep Profile Improvement</h3>
-                            <svg viewBox="0 0 300 200" style="width: 100%; height: auto;">
-                                <rect x="20" y="20" width="260" height="160" fill="#f5f7fa" stroke="#0099ff" stroke-width="2" rx="8"/>
-                                <text x="40" y="50" font-size="11" font-weight="bold" fill="#0099ff">Before QBER:</text>
-                                <rect x="40" y="55" width="100" height="15" fill="#ff1493" opacity="0.5"/>
-                                <text x="90" y="67" text-anchor="middle" font-size="10" fill="white">Light Sleep</text>
-                                <rect x="40" y="72" width="60" height="15" fill="#4caf50"/>
-                                <text x="70" y="84" text-anchor="middle" font-size="10" fill="white">Deep Sleep</text>
-                                <text x="40" y="110" font-size="11" font-weight="bold" fill="#0099ff">With QBER:</text>
-                                <rect x="40" y="115" width="60" height="15" fill="#ff1493" opacity="0.5"/>
-                                <text x="70" y="127" text-anchor="middle" font-size="10" fill="white">Light</text>
-                                <rect x="40" y="132" width="120" height="15" fill="#00d4ff"/>
-                                <text x="100" y="144" text-anchor="middle" font-size="10" fill="white" font-weight="bold">Deep Sleep +50%</text>
-                            </svg>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h4>QBER</h4>
-                    <p>Quantum Frequency Resonance Technology</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="applications.html">Applications</a></li>
-                        <li><a href="literature.html">Literature</a></li>
-                        <li><a href="about.html">About</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Resources</h4>
-                    <ul>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Terms of Service</a></li>
-                        <li><a href="#">Compliance</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Connect</h4>
-                    <ul>
-                        <li><a href="#">Facebook</a></li>
-                        <li><a href="#">LinkedIn</a></li>
-                        <li><a href="#">YouTube</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 QBER. All rights reserved. | Light-Quantum Technology Patents Registered.</p>
-            </div>
-        </div>
-    </footer>
-
-    <script>
-        // Show detail page based on URL parameter or scroll to it
-        function scrollToDetail(appName) {
-            // Hide all detail pages
-            document.querySelectorAll('.detail-page').forEach(page => {
-                page.classList.remove('active');
+            // Load app from URL parameter on page load
+            document.addEventListener("DOMContentLoaded", () => {
+                const appParam = new URLSearchParams(
+                    window.location.search,
+                ).get("app");
+                if (appParam) {
+                    scrollToDetail(appParam);
+                }
             });
-            
-            // Show selected detail page
-            const targetDetail = document.getElementById(`detail-${appName}`);
-            if (targetDetail) {
-                targetDetail.classList.add('active');
-                targetDetail.scrollIntoView({ behavior: 'smooth' });
-            }
-        }
-        
-        // Load app from URL parameter on page load
-        document.addEventListener('DOMContentLoaded', () => {
-            const appParam = new URLSearchParams(window.location.search).get('app');
-            if (appParam) {
-                scrollToDetail(appParam);
-            }
-        });
-    </script>
-    <script src="script.js"></script>
-</body>
+        </script>
+        <script src="script.js"></script>
+    </body>
 </html>
