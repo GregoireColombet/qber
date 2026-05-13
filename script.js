@@ -191,25 +191,28 @@ function showAlert(message, type) {
 // ============================================================================
 
 /**
- * Intersection Observer for scroll animations
+ * Intersection Observer for scroll animations.
+ * Elements start visible (no opacity:0 inline style) and gain the
+ * .animate-in class once they enter the viewport, triggering a CSS
+ * transition. This prevents cards from getting stuck invisible.
  */
 const observerOptions = {
-  threshold: 0.1,
-  rootMargin: "0px 0px -100px 0px",
+  threshold: 0.08,
+  rootMargin: "0px 0px 0px 0px",
 };
 
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
-      entry.target.style.animation = "fadeInUp 0.6s ease forwards";
+      entry.target.classList.add("animate-in");
       observer.unobserve(entry.target);
     }
   });
 }, observerOptions);
 
-// Observe elements for animation on scroll
-document.querySelectorAll(".strength-card, .app-tile, .research-item").forEach((el) => {
-  el.style.opacity = "0";
+// Observe cards — CSS handles the initial state and transition
+document.querySelectorAll(".strength-card, .app-tile, .research-item, .cert-card").forEach((el) => {
+  el.classList.add("animate-ready");
   observer.observe(el);
 });
 

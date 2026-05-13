@@ -522,8 +522,9 @@ a:hover {
     min-height: auto;
 }
 
-.strength-card:hover {
-    transform: translateY(-8px);
+.strength-card:hover,
+.strength-card.animate-in:hover {
+    transform: translateY(-8px) !important;
     box-shadow: var(--shadow-lg);
 }
 
@@ -660,9 +661,10 @@ a:hover {
     border: 2px solid transparent;
 }
 
-.app-tile:hover {
+.app-tile:hover,
+.app-tile.animate-in:hover {
     border-color: var(--color-primary);
-    transform: translateY(-6px);
+    transform: translateY(-6px) !important;
     box-shadow: var(--shadow-lg);
 }
 
@@ -766,8 +768,9 @@ a:hover {
     transition: all var(--transition-smooth);
 }
 
-.research-item:hover {
-    transform: translateX(8px);
+.research-item:hover,
+.research-item.animate-in:hover {
+    transform: translateX(8px) !important;
     box-shadow: var(--shadow-md);
 }
 
@@ -808,8 +811,9 @@ a:hover {
     transition: all var(--transition-smooth);
 }
 
-.cert-card:hover {
-    transform: scale(1.05);
+.cert-card:hover,
+.cert-card.animate-in:hover {
+    transform: scale(1.05) !important;
     box-shadow: var(--shadow-lg);
 }
 
@@ -1039,6 +1043,35 @@ a:hover {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     font-size: 0.9rem;
     color: rgba(255, 255, 255, 0.7);
+}
+
+/* ============================================================================
+   SCROLL ANIMATIONS
+   Cards start fully visible; .animate-ready adds the transition setup,
+   and .animate-in triggers the reveal. This guarantees cards never get
+   stuck invisible even when already in the viewport on page load.
+   ============================================================================ */
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-ready {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.55s ease, transform 0.55s ease;
+}
+
+.animate-in {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
 }
 
 /* ============================================================================
