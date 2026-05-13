@@ -304,34 +304,6 @@
             </div>
         </footer>
 
-        <script>
-            // Show detail page based on URL parameter or scroll to it
-            function scrollToDetail(appName) {
-                // Hide all detail pages
-                document.querySelectorAll(".detail-page").forEach((page) => {
-                    page.classList.remove("active");
-                });
-
-                // Show selected detail page
-                const targetDetail = document.getElementById(
-                    `detail-${appName}`,
-                );
-                if (targetDetail) {
-                    targetDetail.classList.add("active");
-                    targetDetail.scrollIntoView({ behavior: "smooth" });
-                }
-            }
-
-            // Load app from URL parameter on page load
-            document.addEventListener("DOMContentLoaded", () => {
-                const appParam = new URLSearchParams(
-                    window.location.search,
-                ).get("app");
-                if (appParam) {
-                    scrollToDetail(appParam);
-                }
-            });
-        </script>
         <script src="script.js"></script>
     </body>
 </html>
