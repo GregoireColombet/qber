@@ -117,6 +117,12 @@ a:hover {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 var(--spacing-md);
+    width: 100%;
+}
+
+.strengths .container {
+    width: 100%;
+    padding: 0 var(--spacing-md);
 }
 
 /* Buttons */
@@ -482,6 +488,7 @@ a:hover {
     background: white;
     display: block;
     visibility: visible;
+    width: 100%;
 }
 
 .strengths h2 {
@@ -489,6 +496,7 @@ a:hover {
     color: var(--color-primary);
     margin-bottom: var(--spacing-2xl);
     display: block;
+    width: 100%;
 }
 
 .strengths-grid {
@@ -496,15 +504,22 @@ a:hover {
     grid-template-columns: repeat(3, 1fr);
     gap: var(--spacing-lg);
     visibility: visible;
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 .strength-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: var(--spacing-xl);
     background: linear-gradient(135deg, #f5f7fa, #ffffff);
     border-radius: var(--radius-lg);
     text-align: center;
     transition: all var(--transition-smooth);
     border: 1px solid var(--color-border);
+    min-height: auto;
 }
 
 .strength-card:hover {
